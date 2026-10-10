@@ -12,8 +12,8 @@
 <div class="backdrop" id="modal"><form class="modal" id="projectForm"><h2>Create a project</h2><p class="muted">Details are saved to your Supabase account.</p><label class="field"><span>Project name</span><input id="name" required maxlength="40" pattern="[A-Za-z0-9_-]+" placeholder="my-awesome-app"></label><label class="field"><span>Runtime</span><select id="runtime"><option>Node.js</option><option>Python</option><option>Static Website</option></select></label><label class="field"><span>GitHub repository (optional)</span><input id="repo" placeholder="username/repository"></label><div style="display:flex;gap:8px;justify-content:flex-end"><button type="button" class="btn" id="cancel">Cancel</button><button class="btn primary" id="createSubmit">Create project</button></div></form></div><div class="toast" id="toast"></div>
 <script>
 /* Add your Supabase Project URL and Publishable Key below. Never use sb_secret_ here. */
-const SUPABASE_URL="PASTE_YOUR_SUPABASE_PROJECT_URL_HERE";
-const SUPABASE_PUBLISHABLE_KEY="PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE";
+const SUPABASE_URL="https://pyzowkemjswhzynzwcsu.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_OAvSIC508FwV9BXb3TUWcw_O9eTmlJ5";
 /* Your existing table is public."Skydeploy" with capital S. */
 const TABLE_NAME="Skydeploy";
 const $=id=>document.getElementById(id);let db=null,user=null,projects=[],signup=false;
